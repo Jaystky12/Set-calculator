@@ -11,7 +11,7 @@
  * </dl>
  **/
 
-public interface ListInterface<E extends Comparable> {
+public interface ListInterface<E extends Comparable<E>> {
 
     /**	@precondition -
      *  @postcondition - FALSE: list is not empty.
@@ -106,7 +106,6 @@ public interface ListInterface<E extends Comparable> {
      * @postcondition A deep copy of the list has been returned.
      */
     ListInterface<E> copy();
-
 
 
 }
